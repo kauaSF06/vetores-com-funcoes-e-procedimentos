@@ -1,0 +1,21 @@
+programa {
+  funcao inteiro calcularMediaa([] ){
+   real media
+   inteiro i, soma
+   real vetor_notas[3] = {10, 9, 5}
+   soma = 0
+    para(i = 0; i<3; i++){
+      soma = soma + vetor_notas[i]
+      
+    }media = soma/ 3.0
+   
+
+   retorne media
+  }
+  funcao inicio() {
+    real media_final
+    media_final = calcularMediaa("inteiro")
+
+    escreva("a media das notas e:", media_final, "\n")
+  }
+}
