@@ -1,0 +1,20 @@
+programa {
+    
+    funcao vazio mostrar_elementos(inteiro tamanho_desejado) {
+        
+       
+        inteiro meu_array[5] = {1, 2, 3, 4, 5}
+        inteiro i
+        
+        escreva("A função recebeu o tamanho: ", tamanho_desejado, "\n")
+        escreva("Elementos do array de ", tamanho_desejado, " posições (usando apenas 5): \n")
+        
+        para (i = 0; i < 5; i++) {
+            escreva("Posição [", i, "]: ", meu_array[i], "\n")
+        }
+    }
+
+    funcao inicio() {
+        mostrar_elementos(5)
+    }
+}
