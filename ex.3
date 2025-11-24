@@ -1,0 +1,29 @@
+programa {
+	
+	
+	funcao inteiro somar_elementos(inteiro vetor[], inteiro tamanho) {
+		inteiro soma = 0 
+    inteiro i
+
+		para (i = 0; i < tamanho; i++) {
+			soma = soma + vetor[i] 
+		}
+		
+		retorne soma 
+	}
+	
+	funcao inicio() {
+	
+		inteiro numeros[5] = {10, 20, 3, 7, 1}
+		inteiro tamanho_vetor = 5
+		inteiro resultado_soma
+		
+		resultado_soma = somar_elementos(numeros, tamanho_vetor)
+		
+
+		escreva("O vetor é: [10, 20, 3, 7, 1]\n")
+		escreva("A soma de todos os elementos é: ", resultado_soma, "\n")
+		
+
+	}
+}
