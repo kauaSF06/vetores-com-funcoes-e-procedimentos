@@ -1,0 +1,32 @@
+programa {
+    
+    
+    funcao inteiro mostrarMaior(inteiro vetor[], inteiro tamanho) {
+        inteiro i
+        inteiro menor
+        
+        menor = vetor[0] 
+        
+       
+        para (i = 1; i < tamanho; i++) { 
+            se (vetor[i] < menor) {
+                menor = vetor[i]
+            }
+        }
+        
+        retorne menor
+    }
+    
+
+    funcao inicio() {
+       
+        const inteiro TAMANHO = 6
+        inteiro numeros[TAMANHO] = {10, 5, 20, 8, 15, -3} 
+        
+        inteiro resultado
+        
+        resultado = mostrarMaior(numeros, TAMANHO)
+        
+        escreva("O menor valor no vetor é: ", resultado) 
+    }
+}
