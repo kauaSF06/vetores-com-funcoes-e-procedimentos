@@ -1,0 +1,19 @@
+programa {
+    funcao vazio mostrarPares(inteiro vetor[], inteiro tamanho){
+inteiro i
+para(i = 0; i < tamanho; i++){
+   se(vetor[i] % 2 == 0){
+    escreva(vetor[i], " É par\n")
+   }
+}
+    }
+  funcao inicio() {
+    inteiro  vetor_pares[5] = {1,2,3,4,5}
+    inteiro tamanho = 5
+
+    mostrarPares(vetor_pares, tamanho)
+
+
+  }
+}
+
